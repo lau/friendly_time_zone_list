@@ -10,8 +10,10 @@ Note that not all time zones are covered, but the list covers most places.
 
 ## Installation
 
-The package can be installed
+ONCE THIS HAS BEEN PUBLISHED TO HEX the package can be installed
 by adding `friendly_time_zone_list` to your list of dependencies in `mix.exs`:
+
+NOT YET ON HEX
 
 ```elixir
 def deps do
@@ -38,4 +40,5 @@ iex> FriendlyTimeZoneList.list() |> Enum.take(5)
 ]
 ```
 
+After someone selects a time zone, it makes sense to save both the "friendly name" and the IANA name if the choice is ever shown to the user again. Because some IANA names maps to two different "friendly names".
 
